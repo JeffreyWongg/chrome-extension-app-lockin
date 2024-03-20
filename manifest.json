@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "LockIn",
+    "description": "Control your websites to stay locked in. Set up an app timer and make a list of distracting sites to block!",
+    "version": "1.0",
+    "icons": {
+        "16": "LockIn Icon Logo.png",
+        "48": "LockIn Icon Logo.png",
+        "128": "LockIn Icon Logo.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "LockIn Icon Logo.png",
+            "48": "LockIn Icon Logo.png",
+            "128": "LockIn Icon Logo.png"
+        }
+    },
+    "permissions": [
+        "tabs",
+        "scripting",
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": ["main.css"],
+            "python": ["lockin.py"]
+        }
+    ],
+    "action": {
+        "default_title": "chrome extension title",
+        "default_popup": "popup.html"
+    }
+}
