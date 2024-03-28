@@ -9,7 +9,7 @@ const generateHTML = (pageName) => {
        <div class="cloud x5"></div>
    </div>
    <div class='c'>
-       <div class='_404'>404</div>
+       <div class='_404'>LockIn!!!</div>
        <hr>
        <div class='_1'>GET BACK TO WORK</div>
        <div class='_2'>WORKING > ${pageName}</div>
@@ -20,7 +20,7 @@ const generateHTML = (pageName) => {
 const generateCSS = () => {
     return `<style>@import url(https://fonts.googleapis.com/css?family=opensans:500);
     body {
-      background: #33cc99;
+      background: #f8b858;
       color: #fff;
       font-family: "Open Sans", sans-serif;
       max-height: 700px;
@@ -68,7 +68,6 @@ const generateCSS = () => {
       display: inline-block;
     }
     
-   
     .right {
       float: right;
       width: 60%;
@@ -250,18 +249,38 @@ const generateCSS = () => {
      </style>`;
 };
 
-const youtubeOn = document.querySelector("youtube");
-const youtubeOff = document.querySelector("youtube");
-
-switch(window.location.hostname) {
-    case "www.youtube.com":
+function toggleCheck() {
+  if(document.getElementById("youtubeCheckBox").checked === false){
+    switch(window.location.hostname) {
+      case "www.youtube.com":
         document.head.innerHTML = generateCSS
         document.body.innerHTML = generateHTML("YOUTUBE")
         break;
-    case "www.instagram.com":
+      default:
+        break;
+    }
+  } else if (document.getElementById("instagramCheckBox").checked === true){
+    switch(window.location.hostname) {
+      case "www.instagram.com":
         document.head.innerHTML = generateCSS
         document.body.innerHTML = generateHTML("INSTAGRAM")
-        alert("YOU ARE DISTRACTED")
+        break;
+    }
+  }
+}
+
+switch(window.location.hostname) {
+  case "www.youtube.com":
+    document.head.innerHTML = generateCSS
+    document.body.innerHTML = generateHTML("YOUTUBE")
+    break;
+    case "www.instagram.com":
+      document.head.innerHTML = generateCSS
+      document.body.innerHTML = generateHTML("INSTAGRAM")
+      break;
+  case "www.instagram.com":
+        document.head.innerHTML = generateCSS
+        document.body.innerHTML = generateHTML("INSTAGRAM")
         break;
     case "www.tiktok.com":
         document.head.innerHTML = generateCSS

@@ -4,15 +4,15 @@
     "description": "Control your websites to stay locked in. Set up an app timer and make a list of distracting sites to block!",
     "version": "0.0.1",
     "icons": {
-        "16": "LockIn Icon Logo.png",
-        "48": "LockIn Icon Logo.png",
-        "128": "LockIn Icon Logo.png"
+        "16": "lockin_logo.png",
+        "48": "lockin_logo.png",
+        "128": "lockin_logo.png"
     },
     "page_action": {
         "default_icon": {
-            "16": "LockIn Icon Logo.png",
-            "48": "LockIn Icon Logo.png",
-            "128": "LockIn Icon Logo.png"
+            "16": "lockin_logo.png",
+            "48": "lockin_logo.png",
+            "128": "lockin_logo.png"
         }
     },
     "permissions": [

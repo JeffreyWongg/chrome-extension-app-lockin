@@ -3,178 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="main.css">
     <title>LockIn</title>
 </head>
 <body>
-    <section class="custom">
-        <input class="url"></input>
-    </section>
-    
+    <header class="header">
+        
+        <img src="lockin_logo.png" alt="" class="logo">
+            <a href="" class="logo">LockIn</a>
+        </img>
+    </header>
     <section class="default">
         <div class="default-container">
-            <div class="youtube">
-                <h2>YouTube</h2>
-                <i class='bx bxl-youtube'></i>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
+            <div class="default-box">
+                <div class="youtube">
+                    <h2>YouTube</h2>
+                    <i class='bx bxl-youtube'></i>
+                    <label class="switch">
+                        <input type="checkbox" id="youtubeCheckBox" onchange="toggleCheck()" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
             </div>
         </div>
 
-        <div class="default-container"></div>
-            <div class="instagram">
-                <h2>Instagram</h2>
-                <i class='bx bxl-instagram' ></i>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>
-
-        <div class="default-container"></div>
-            <div class="tiktok">
-                <h2>Tiktok</h2>
-                <i class='bx bxl-tiktok' ></i>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
+        <div class="default-container">
+            <div class="default-box">
+                <div class="instagram">
+                    <h2>Instagram</h2>
+                    <i class='bx bxl-instagram' ></i>
+                    <label class="switch">
+                        <input type="checkbox" id="instagramCheckBox" onchange="toggleCheck()">
+                        <span class="slider"></span>
+                    </label>
+                </div>
             </div>
         </div>
             
-        <div class="default-container"></div>
-            <div class="twitter">
-                <h2>Twitter</h2>
-                <i class='bx bxl-twitter' ></i>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
+        </div>
+
+        <div class="default-container">
+            <div class="default-box">
+                <div class="tiktok">
+                    <h2>Tiktok</h2>
+                    <i class='bx bxl-tiktok' ></i>
+                    <label class="switch">
+                        <input type="checkbox" id="tiktokCheckBox" onchange="toggleCheck()">
+                        <span class="slider"></span>
+                    </label>
+                </div>
             </div>
         </div>
-
-        <div class="default-container"></div>
-            <div class="reddit">
-                <h2>Reddit</h2>
-                <i class='bx bxl-reddit' ></i>/
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>
-
-        <div class="default-container"></div>
-            <div class="amazon">
-                <h2>Amazon</h2>
-                <i class='bx bxl-amazon' ></i>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>
-
-        <div class="default-container"></div>
-            <div class="netflix">
-                <h2>Netflix</h2>
-                <img src="assets/netflix.jpeg"></img>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>
-
-        <div class="default-container"></div>
-            <div class="fandom">
-                <h2>Fandom</h2>
-                <img src="assets/fandom.png"></img>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>
-
-        <div class="default-container"></div>
-            <div class="wikipedia">
-                <h2>Wikipedia</h2>
-                <i class='bx bxl-wikipedia' ></i>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>
-
-        <div class="default-container"></div>
-            <div class="chatgpt">
-                <h2>ChatGPT</h2>
-                <img src="assets/chatgpt.png"></img>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>
-
-        <div class="default-container"></div>
-            <div class="twitch">
-                <h2>Twitch</h2>
-                <i class='bx bxl-twitch'></i>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>
-
-        <div class="default-container"></div>
-            <div class="discord">
-                <h2>Discord</h2>
-                <i class='bx bxl-discord' ></i>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>
-
-        <div class="default-container"></div>
-            <div class="roblox">
-                <h2>Roblox</h2>
-                <img src="assets/roblox.png"></img>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-            </div>
-        </div>
-    </section>
-
-    <div class="tab-content">
-        <div id="home">
-            <h1>Home</h1>
-            <p>This is the home</p>
-        </div>
-        <div id="black-list">
-            <h1>Black List</h1>
-            <p>This is the home</p>
-        </div>
-        <div id="settings">
-            <h1>Settings</h1>
-            <p>This is the home</p>
-        </div>
-    </div>
-
-    <section id="home">
-        <div class="home-container">
             
+        </div>
+            
+        <div class="default-container">
+            <div class="default-box">
+                <div class="twitter">
+                    <h2>Twitter</h2>
+                    <i class='bx bxl-twitter' ></i>
+                    <label class="switch">
+                        <input type="checkbox" id="twitterCheckBox" onchange="toggleCheck()">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="default-container">
+            <div class="default-box">
+                <div class="reddit">
+                    <h2>Reddit</h2>
+                    <i class='bx bxl-reddit' ></i>/
+                    <label class="switch">
+                        <input type="checkbox" id="redditCheckBox" onchange="toggleCheck()">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="default-container">
+            <div class="default-box">
+                <div class="amazon">
+                    <h2>Amazon</h2>
+                    <i class='bx bxl-amazon' ></i>
+                    <label class="switch">
+                        <input type="checkbox" id="amazonCheckBox" onchange="toggleCheck()">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="default-container">
+            <div class="default-box">
+                <div class="netflix">
+                    <h2>Netflix</h2>
+                    <img src="assets/netflix.jpeg"></img>
+                    <label class="switch">
+                        <input type="checkbox" id="netflixCheckBox" onchange="toggleCheck()">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="default-container">
+            <div class="default-box">
+                <div class="fandom">
+                    <h2>Fandom</h2>
+                    <img src="assets/fandom.png"></img>
+                    <label class="switch">
+                        <input type="checkbox" id="fandomCheckBox" onchange="toggleCheck()">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="default-container">
+            <div class="default-box">
+                <div class="wikipedia">
+                    <h2>Wikipedia</h2>
+                    <i class='bx bxl-wikipedia' ></i>
+                    <label class="switch">
+                        <input type="checkbox" id="wikiCheckBox" onchange="toggleCheck()">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="default-container">
+            <div class="default-box">
+                <div class="chatgpt">
+                    <h2>ChatGPT</h2>
+                    <img src="assets/chatgpt.png"></img>
+                    <label class="switch">
+                        <input type="checkbox" id="chatgptCheckBox" onchange="toggleCheck()">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+            
+
+        <div class="default-container">
+            <div class="default-box">
+                <div class="twitch">
+                    <h2>Twitch</h2>
+                    <i class='bx bxl-twitch'></i>
+                    <label class="switch">
+                        <input type="checkbox" id="twitchCheckBox" onchange="toggleCheck()">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="default-container">
+            <div class="default-box">
+                <div class="discord">
+                    <h2>Discord</h2>
+                    <i class='bx bxl-discord' ></i>
+                    <label class="switch">
+                        <input type="checkbox" id="discordCheckbox" onchange="toggleCheck()">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="default-container">
+            <div class="default-box">
+                <div class="roblox">
+                    <h2>Roblox</h2>
+                    <img src="assets/roblox.png"></img>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
         </div>
     </section>
 

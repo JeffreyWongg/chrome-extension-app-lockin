@@ -1,9 +1,48 @@
-.custom .url {
-    
+body {
+    background-color: #f8b858;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 500;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #0a1238;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .default {
-    width: 1000px;
+    font-family: "Source Code Pro", monospace;
+    color: #0a1238;
+    height: 100px;
+    width: 500px;
+}
+
+.default-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .default-container i {
@@ -16,13 +55,19 @@
     height: 50px;
 }
 
-.default-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+.default-container .default-box {
+    flex: 1 1 30rem;
+    background: #f8b858;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    border: .2rem solid #0a1238;
+    transition: .5s ease;
+    gap: 3rem;
 }
+
+
+
+
 
 .switch {
     position: relative;
@@ -39,12 +84,13 @@
 
 .slider {
     position: absolute;
+    justify-content: center;
     cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #0a1238;
     -webkit-transition: 0.4s;
     transition: 0.4s;
     border-radius: 34px;
@@ -64,11 +110,11 @@
 }
 
 input:checked + .slider {
-    background-color: #222;
+    background-color: #83540d;
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #222;
+    box-shadow: 0 0 1px #83540d;
 }
 
 input:checked + .slider:before {
