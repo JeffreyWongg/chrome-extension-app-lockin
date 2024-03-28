@@ -1,10 +1,19 @@
+.custom .url {
+    
+}
+
 .default {
     width: 1000px;
 }
 
-img {
-    width: 100px;
-    height: 100px;
+.default-container i {
+    width: 50px;
+    height: 50px;
+}
+
+.default-container img {
+    width: 50px;
+    height: 50px;
 }
 
 .default-container {
@@ -13,175 +22,6 @@ img {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-}
-
-.default-container .youtube {
-    flex: 1 1 30rem;
-    background: linear-gradient(to left, #000000 , #2b2b2b);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid #000;
-    transition: .5s ease;
-    backdrop-filter: blur(25px);
-    position: relative;
-    overflow: hidden;
-}
-
-.default-container .instagram {
-    flex: 1 1 30rem;
-    background: linear-gradient(to left, #000000 , #2b2b2b);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid #000;
-    transition: .5s ease;
-    backdrop-filter: blur(25px);
-    position: relative;
-    overflow: hidden;
-}
-
-.default-container .tiktok {
-    flex: 1 1 30rem;
-    background: linear-gradient(to left, #000000 , #2b2b2b);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid #000;
-    transition: .5s ease;
-    backdrop-filter: blur(25px);
-    position: relative;
-    overflow: hidden;
-}
-
-.default-container .twitter {
-    flex: 1 1 30rem;
-    background: linear-gradient(to left, #000000 , #2b2b2b);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid #000;
-    transition: .5s ease;
-    backdrop-filter: blur(25px);
-    position: relative;
-    overflow: hidden;
-}
-
-.default-container .reddit {
-    flex: 1 1 30rem;
-    background: linear-gradient(to left, #000000 , #2b2b2b);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid #000;
-    transition: .5s ease;
-    backdrop-filter: blur(25px);
-    position: relative;
-    overflow: hidden;
-}
-
-.default-container .amazon {
-    flex: 1 1 30rem;
-    background: linear-gradient(to left, #000000 , #2b2b2b);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid #000;
-    transition: .5s ease;
-    backdrop-filter: blur(25px);
-    position: relative;
-    overflow: hidden;
-}
-
-.default-container .netflix {
-    flex: 1 1 30rem;
-    background: linear-gradient(to left, #000000 , #2b2b2b);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid #000;
-    transition: .5s ease;
-    backdrop-filter: blur(25px);
-    position: relative;
-    overflow: hidden;
-}
-
-.default-container .fandom {
-    flex: 1 1 30rem;
-    background: linear-gradient(to left, #000000 , #2b2b2b);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid #000;
-    transition: .5s ease;
-    backdrop-filter: blur(25px);
-    position: relative;
-    overflow: hidden;
-}
-
-.default-container .wikipedia {
-    flex: 1 1 30rem;
-    background: linear-gradient(to left, #000000 , #2b2b2b);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid #000;
-    transition: .5s ease;
-    backdrop-filter: blur(25px);
-    position: relative;
-    overflow: hidden;
-}
-
-.default-container .chatgpt {
-    flex: 1 1 30rem;
-    background: linear-gradient(to left, #000000 , #2b2b2b);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid #000;
-    transition: .5s ease;
-    backdrop-filter: blur(25px);
-    position: relative;
-    overflow: hidden;
-}
-
-.default-container .twitch {
-    flex: 1 1 30rem;
-    background: linear-gradient(to left, #000000 , #2b2b2b);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid #000;
-    transition: .5s ease;
-    backdrop-filter: blur(25px);
-    position: relative;
-    overflow: hidden;
-}
-
-.default-container .discord {
-    flex: 1 1 30rem;
-    background: linear-gradient(to left, #000000 , #2b2b2b);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid #000;
-    transition: .5s ease;
-    backdrop-filter: blur(25px);
-    position: relative;
-    overflow: hidden;
-}
-
-.default-container .roblox {
-    flex: 1 1 30rem;
-    background: linear-gradient(to left, #000000 , #2b2b2b);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid #000;
-    transition: .5s ease;
-    backdrop-filter: blur(25px);
-    position: relative;
-    overflow: hidden;
 }
 
 .switch {
